@@ -4,7 +4,7 @@ import pandas as pd
 from car_price_app import *
 
 # load data
-car_price_df = pd.read_csv('./car-data/CarPrice_Assignment.csv')
+car_price_df = pd.read_csv('./Dataset/CarPrice_Assignment.csv')
 # split dataframe into inputs and targets
 features_column = ['carlength', 'carwidth', 'curbweight', 'enginesize', 'horsepower', 'citympg', 'highwaympg']
 X = car_price_df[features_column].to_numpy()
